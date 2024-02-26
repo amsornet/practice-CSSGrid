@@ -1,0 +1,29 @@
+.grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-flow: column;
+}
+.item1 {
+
+
+
+}
+.grid-item {
+
+}
+
+/*css*/
+.grid-container {
+    border: 2px solid red;
+}
+
+div > div:nth-child(odd) {
+    background: #666;
+    font-size: 25px;
+}
+div > div:nth-child(even) {
+    background: #999;
+    font-size: 25px;
+}

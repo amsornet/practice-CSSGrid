@@ -1,0 +1,25 @@
+body {
+    font-family: "Calibri";
+    font-size: 30px;
+    padding-left: 40px;
+}
+ul {
+    list-style-type: none;
+}
+
+[mytitle] {
+    cursor: pointer;
+}
+
+[mytitle]:after {
+    content: "";
+    transition: .2s;
+}
+[mytitle]:hover:after {
+    width: 550px;
+    /*display: block;*/
+    content: attr(mytitle);
+    background-color: #e9a333;
+    padding: 10px;
+    z-index: 100;
+}

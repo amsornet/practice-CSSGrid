@@ -1,0 +1,29 @@
+.item-a {grid-area: header}
+.item-b {grid-area: main}
+.item-c {grid-area: sidebar}
+.item-d {grid-area: footer}
+
+.container {
+
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 150px 350px 40px;
+    grid-template-areas:
+        "header header header header"
+        "main main main sidebar"
+        "footer footer footer footer";
+}
+
+.item {
+    color: blue;
+    border: 1px solid red;
+}
+
+div > div:nth-child(odd) {
+    background: #666;
+    font-size: 25px;
+}
+div > div:nth-child(even) {
+    background: #999;
+    font-size: 25px;
+}
