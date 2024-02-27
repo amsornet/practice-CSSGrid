@@ -1,12 +1,15 @@
 .grid-container {
     display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-gap: 10px;*/
+    height: 100vh;
+    grid-template-columns: 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
     grid-auto-flow: column;
+    place-content: stretch space-between;
+
 }
 .item1 {
-
+    place-self: end start;
 
 
 }
